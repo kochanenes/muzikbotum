@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
       .setDescription('Beni yeniden başlatmak  istediğine eminsen aşağıdaki **TİK** işaretine, bir kere dokunur musun?')
       .setColor('RANDOM')
 message.channel.send(embed).then(async function (sentEmbed) {
-            const emojiArray = [":white_check_mark:"];
+            const emojiArray = ["white_check_mark"];
             const filter = (reaction, user) => emojiArray.includes(reaction.emoji.name) && user.id === message.author.id;
             await sentEmbed.react(emojiArray[0]).catch(function () { });
             var reactions = sentEmbed.createReactionCollector(filter, {
