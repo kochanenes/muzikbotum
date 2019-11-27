@@ -382,4 +382,4 @@ url: "http://www.twitch.tv/kochanenes"})
 
 
 
-client.login(ayarlar.token);
+client.login(process.env.BOT_TOKEN);
