@@ -7,7 +7,7 @@ app.get("/", (request, response) => {
 });
 app.listen(8000);
 setInterval(() => {
-  http.get(`http://trexdash.glitch.me/`);//Buraya glitch linkinizi doğru şekilde giriniz. ve Botunuz 7/24 olacaktır!
+  http.get(`http://kochanenes.glitch.me/`);//Buraya glitch linkinizi doğru şekilde giriniz. ve Botunuz 7/24 olacaktır!
 }, 280000)
 const { GOOGLE_API_KEY } = require('./anahtarlar.json');
 const Discord = require("discord.js");
