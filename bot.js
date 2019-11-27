@@ -16,7 +16,7 @@ const ayarlar = require('./ayarlar.json')
 const YouTube = require('simple-youtube-api');
 const queue = new Map(); 
 
-const token = "token";
+
 const youtube = new YouTube(GOOGLE_API_KEY);
 const ytdl = require('ytdl-core');
 const prefix = ayarlar.prefix;
