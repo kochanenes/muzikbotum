@@ -25,7 +25,7 @@ message.channel.send(embed).then(async function (sentEmbed) {
             });
 reactions.on("end", () => sentEmbed.edit("İşlemi iptal ettim! "));
     reactions.on("collect", async function (reaction) {
-                if (reaction.emoji.name === "✖️") {
+                if (reaction.emoji.name === "☑️") {
 message.channel.send('İşlem onaylandı! ')
     
           
