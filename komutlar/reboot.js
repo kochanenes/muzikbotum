@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
       .setDescription('Beni yeniden başlatmak  istediğine eminsen aşağıdaki **TİK** işaretine, bir kere dokunur musun?')
       .setColor('RANDOM')
 message.channel.send(embed).then(async function (sentEmbed) {
-            const emojiArray = ["white_check_mark"];
+            const emojiArray = ["✔️"];
             const filter = (reaction, user) => emojiArray.includes(reaction.emoji.name) && user.id === message.author.id;
             await sentEmbed.react(emojiArray[0]).catch(function () { });
             var reactions = sentEmbed.createReactionCollector(filter, {
@@ -25,7 +25,7 @@ message.channel.send(embed).then(async function (sentEmbed) {
             });
 reactions.on("end", () => sentEmbed.edit("İşlemi iptal ettim! "));
     reactions.on("collect", async function (reaction) {
-                if (reaction.emoji.name === ":x:") {
+                if (reaction.emoji.name === "✖️") {
 message.channel.send('İşlem onaylandı! ')
     
           
