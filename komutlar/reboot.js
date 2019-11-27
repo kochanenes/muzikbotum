@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
       .setColor('RED') 
   
 
-  if(message.author.id !== "SAHİP ID") return message.channel.sendEmbed(embed2)
+  if(message.author.id !== "617418426390020104") return message.channel.sendEmbed(embed2)
      
   var embed = new Discord.RichEmbed()   
       .setTitle('**Merhaba Sahibim,**')
